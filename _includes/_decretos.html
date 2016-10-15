@@ -2,7 +2,7 @@
   <ul class="f3 mw7 center list pl0">
     {% for post in site.posts limit: 25 %}
       <li class="mw7 center pv2 black-70 fw1 i">
-        <a href="{{ post.url }}" title="{{post.title}}">
+        <a href="{{ post.url }}" title="{{post.title}}" class="link">
           <date datetime="{{post.date}}">{{ post.date | date_to_long_string }}</date>
           {{ post.title }}
         </a>
