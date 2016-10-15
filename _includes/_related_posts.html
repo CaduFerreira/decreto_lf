@@ -1,0 +1,11 @@
+<article class="ph6-l ph5-m ph3 mv5">
+  <ul class="f3 mw7 center list pl0">
+  {% for post in site.related_posts limit: 3 %}
+    <li class="mw7 center pv2 black-70 fw1 i">
+      <a href="{{ post.url }}" title="{{post.title}}">
+        {{ post.title }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</article>
